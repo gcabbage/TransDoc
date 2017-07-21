@@ -1,0 +1,4 @@
+uiGetMusicState
+===============
+
+.. autotlisp:: (uiGetMusicState)

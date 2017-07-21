@@ -1,0 +1,4 @@
+unvGetElapsedGameTime
+=====================
+
+.. autotlisp:: (unvGetElapsedGameTime)

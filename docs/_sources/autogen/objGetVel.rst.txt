@@ -1,0 +1,4 @@
+objGetVel
+=========
+
+.. autotlisp:: (objGetVel)

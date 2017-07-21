@@ -1,0 +1,4 @@
+typGetXML
+=========
+
+.. autotlisp:: (typGetXML)

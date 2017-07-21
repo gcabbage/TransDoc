@@ -1,0 +1,4 @@
+shpIsFuelCompatible
+===================
+
+.. autotlisp:: (shpIsFuelCompatible)

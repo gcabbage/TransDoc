@@ -1,0 +1,4 @@
+typGetProperty
+==============
+
+.. autotlisp:: (typGetProperty)

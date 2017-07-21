@@ -1,0 +1,4 @@
+objChangeEquipmentStatus
+========================
+
+.. autotlisp:: (objChangeEquipmentStatus)

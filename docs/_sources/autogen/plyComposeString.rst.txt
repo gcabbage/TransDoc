@@ -1,0 +1,4 @@
+plyComposeString
+================
+
+.. autotlisp:: (plyComposeString)

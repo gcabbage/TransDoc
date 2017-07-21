@@ -1,0 +1,4 @@
+scrGetData
+==========
+
+.. autotlisp:: (scrGetData)

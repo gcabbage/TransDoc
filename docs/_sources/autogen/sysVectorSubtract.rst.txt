@@ -1,0 +1,4 @@
+sysVectorSubtract
+=================
+
+.. autotlisp:: (sysVectorSubtract)

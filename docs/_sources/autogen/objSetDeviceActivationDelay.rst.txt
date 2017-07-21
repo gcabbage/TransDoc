@@ -1,0 +1,4 @@
+objSetDeviceActivationDelay
+===========================
+
+.. autotlisp:: (objSetDeviceActivationDelay)

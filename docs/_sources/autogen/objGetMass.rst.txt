@@ -1,0 +1,4 @@
+objGetMass
+==========
+
+.. autotlisp:: (objGetMass)

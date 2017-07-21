@@ -1,0 +1,4 @@
+plyGetCredits
+=============
+
+.. autotlisp:: (plyGetCredits)

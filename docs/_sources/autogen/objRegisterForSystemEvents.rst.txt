@@ -1,0 +1,4 @@
+objRegisterForSystemEvents
+==========================
+
+.. autotlisp:: (objRegisterForSystemEvents)

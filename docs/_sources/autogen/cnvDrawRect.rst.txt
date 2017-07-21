@@ -1,0 +1,4 @@
+cnvDrawRect
+===========
+
+.. autotlisp:: (cnvDrawRect)

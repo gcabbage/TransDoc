@@ -1,0 +1,4 @@
+objGetID
+========
+
+.. autotlisp:: (objGetID)

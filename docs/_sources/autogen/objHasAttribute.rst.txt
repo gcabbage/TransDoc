@@ -1,0 +1,4 @@
+objHasAttribute
+===============
+
+.. autotlisp:: (objHasAttribute)

@@ -1,0 +1,4 @@
+typAddTimerEvent
+================
+
+.. autotlisp:: (typAddTimerEvent)

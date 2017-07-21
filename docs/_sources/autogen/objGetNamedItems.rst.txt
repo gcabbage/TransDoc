@@ -1,0 +1,4 @@
+objGetNamedItems
+================
+
+.. autotlisp:: (objGetNamedItems)

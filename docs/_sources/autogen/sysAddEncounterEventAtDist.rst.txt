@@ -1,0 +1,4 @@
+sysAddEncounterEventAtDist
+==========================
+
+.. autotlisp:: (sysAddEncounterEventAtDist)

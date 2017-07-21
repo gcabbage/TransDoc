@@ -1,0 +1,4 @@
+msnGetProperty
+==============
+
+.. autotlisp:: (msnGetProperty)

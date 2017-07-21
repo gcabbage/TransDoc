@@ -1,0 +1,4 @@
+sysGetNavPathPoint
+==================
+
+.. autotlisp:: (sysGetNavPathPoint)

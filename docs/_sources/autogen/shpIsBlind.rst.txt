@@ -1,0 +1,4 @@
+shpIsBlind
+==========
+
+.. autotlisp:: (shpIsBlind)

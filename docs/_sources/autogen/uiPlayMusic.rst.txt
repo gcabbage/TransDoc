@@ -1,0 +1,4 @@
+uiPlayMusic
+===========
+
+.. autotlisp:: (uiPlayMusic)

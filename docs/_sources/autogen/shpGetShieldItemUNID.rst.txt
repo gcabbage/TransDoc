@@ -1,0 +1,4 @@
+shpGetShieldItemUNID
+====================
+
+.. autotlisp:: (shpGetShieldItemUNID)

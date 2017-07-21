@@ -1,0 +1,4 @@
+shpInstallArmor
+===============
+
+.. autotlisp:: (shpInstallArmor)

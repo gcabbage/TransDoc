@@ -1,0 +1,4 @@
+xmlGetText
+==========
+
+.. autotlisp:: (xmlGetText)

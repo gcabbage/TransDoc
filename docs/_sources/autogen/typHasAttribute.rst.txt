@@ -1,0 +1,4 @@
+typHasAttribute
+===============
+
+.. autotlisp:: (typHasAttribute)

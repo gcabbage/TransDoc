@@ -1,0 +1,4 @@
+sysCreateEffect
+===============
+
+.. autotlisp:: (sysCreateEffect)

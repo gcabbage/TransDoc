@@ -1,0 +1,4 @@
+objSetShowAsDestination
+=======================
+
+.. autotlisp:: (objSetShowAsDestination)

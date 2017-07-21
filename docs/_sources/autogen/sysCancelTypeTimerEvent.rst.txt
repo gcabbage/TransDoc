@@ -1,0 +1,4 @@
+sysCancelTypeTimerEvent
+=======================
+
+.. autotlisp:: (sysCancelTypeTimerEvent)

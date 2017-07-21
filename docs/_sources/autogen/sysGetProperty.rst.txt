@@ -1,0 +1,4 @@
+sysGetProperty
+==============
+
+.. autotlisp:: (sysGetProperty)

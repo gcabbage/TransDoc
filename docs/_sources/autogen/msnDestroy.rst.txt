@@ -1,0 +1,4 @@
+msnDestroy
+==========
+
+.. autotlisp:: (msnDestroy)

@@ -1,0 +1,4 @@
+objClearShowAsDestination
+=========================
+
+.. autotlisp:: (objClearShowAsDestination)

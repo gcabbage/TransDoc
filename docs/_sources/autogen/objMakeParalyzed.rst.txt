@@ -1,0 +1,4 @@
+objMakeParalyzed
+================
+
+.. autotlisp:: (objMakeParalyzed)

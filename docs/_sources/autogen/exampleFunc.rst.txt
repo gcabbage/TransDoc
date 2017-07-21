@@ -1,0 +1,4 @@
+exampleFunc
+===========
+
+.. autotlisp:: (exampleFunc)

@@ -1,0 +1,4 @@
+itmGetInstallPos
+================
+
+.. autotlisp:: (itmGetInstallPos)

@@ -1,0 +1,4 @@
+shpMakeRadioactive
+==================
+
+.. autotlisp:: (shpMakeRadioactive)

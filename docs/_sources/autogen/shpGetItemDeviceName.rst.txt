@@ -1,0 +1,4 @@
+shpGetItemDeviceName
+====================
+
+.. autotlisp:: (shpGetItemDeviceName)

@@ -1,0 +1,4 @@
+sysGetTopologyDistance
+======================
+
+.. autotlisp:: (sysGetTopologyDistance)

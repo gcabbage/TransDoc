@@ -1,0 +1,4 @@
+objRemoveItem
+=============
+
+.. autotlisp:: (objRemoveItem)

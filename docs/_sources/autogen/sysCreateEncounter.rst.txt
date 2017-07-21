@@ -1,0 +1,4 @@
+sysCreateEncounter
+==================
+
+.. autotlisp:: (sysCreateEncounter)

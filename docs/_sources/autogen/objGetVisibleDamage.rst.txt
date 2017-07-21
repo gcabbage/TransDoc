@@ -1,0 +1,4 @@
+objGetVisibleDamage
+===================
+
+.. autotlisp:: (objGetVisibleDamage)

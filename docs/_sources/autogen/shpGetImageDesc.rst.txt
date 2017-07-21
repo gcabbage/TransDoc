@@ -1,0 +1,4 @@
+shpGetImageDesc
+===============
+
+.. autotlisp:: (shpGetImageDesc)

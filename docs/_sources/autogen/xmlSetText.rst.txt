@@ -1,0 +1,4 @@
+xmlSetText
+==========
+
+.. autotlisp:: (xmlSetText)

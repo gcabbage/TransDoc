@@ -1,0 +1,4 @@
+objGetArmorReplacePrice
+=======================
+
+.. autotlisp:: (objGetArmorReplacePrice)

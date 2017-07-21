@@ -1,0 +1,4 @@
+isatom
+======
+
+.. autotlisp:: (isatom)

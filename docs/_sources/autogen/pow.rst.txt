@@ -1,0 +1,4 @@
+pow
+===
+
+.. autotlisp:: (pow)

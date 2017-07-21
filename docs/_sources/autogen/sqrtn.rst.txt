@@ -1,0 +1,4 @@
+sqrtn
+=====
+
+.. autotlisp:: (sqrtn)

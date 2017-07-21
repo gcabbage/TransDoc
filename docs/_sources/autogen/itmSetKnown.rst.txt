@@ -1,0 +1,4 @@
+itmSetKnown
+===========
+
+.. autotlisp:: (itmSetKnown)

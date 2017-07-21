@@ -1,0 +1,4 @@
+resGetImageProperty
+===================
+
+.. autotlisp:: (resGetImageProperty)

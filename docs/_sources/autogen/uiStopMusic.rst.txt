@@ -1,0 +1,4 @@
+uiStopMusic
+===========
+
+.. autotlisp:: (uiStopMusic)

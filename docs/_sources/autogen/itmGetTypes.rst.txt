@@ -1,0 +1,4 @@
+itmGetTypes
+===========
+
+.. autotlisp:: (itmGetTypes)

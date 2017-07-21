@@ -1,0 +1,4 @@
+itmIsEqual
+==========
+
+.. autotlisp:: (itmIsEqual)

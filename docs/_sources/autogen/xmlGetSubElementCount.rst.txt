@@ -1,0 +1,4 @@
+xmlGetSubElementCount
+=====================
+
+.. autotlisp:: (xmlGetSubElementCount)

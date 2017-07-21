@@ -1,0 +1,4 @@
+typFireObjEvent
+===============
+
+.. autotlisp:: (typFireObjEvent)

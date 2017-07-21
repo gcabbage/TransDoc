@@ -1,0 +1,4 @@
+scrGetCounter
+=============
+
+.. autotlisp:: (scrGetCounter)

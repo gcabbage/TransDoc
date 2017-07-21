@@ -1,0 +1,4 @@
+objIsDockedAt
+=============
+
+.. autotlisp:: (objIsDockedAt)

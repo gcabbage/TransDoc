@@ -1,0 +1,4 @@
+typAddRecurringTimerEvent
+=========================
+
+.. autotlisp:: (typAddRecurringTimerEvent)

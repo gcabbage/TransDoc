@@ -1,0 +1,4 @@
+scrSetDisplayText
+=================
+
+.. autotlisp:: (scrSetDisplayText)

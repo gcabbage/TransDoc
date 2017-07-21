@@ -1,0 +1,4 @@
+shpGetMaxSpeed
+==============
+
+.. autotlisp:: (shpGetMaxSpeed)

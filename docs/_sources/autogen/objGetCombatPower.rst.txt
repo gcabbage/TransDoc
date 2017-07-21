@@ -1,0 +1,4 @@
+objGetCombatPower
+=================
+
+.. autotlisp:: (objGetCombatPower)

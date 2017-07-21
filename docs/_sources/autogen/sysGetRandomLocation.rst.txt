@@ -1,0 +1,4 @@
+sysGetRandomLocation
+====================
+
+.. autotlisp:: (sysGetRandomLocation)

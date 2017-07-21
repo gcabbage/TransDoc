@@ -1,0 +1,4 @@
+objGetPos
+=========
+
+.. autotlisp:: (objGetPos)

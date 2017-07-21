@@ -1,0 +1,4 @@
+objGetDetectRange
+=================
+
+.. autotlisp:: (objGetDetectRange)

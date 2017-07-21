@@ -1,0 +1,4 @@
+objResume
+=========
+
+.. autotlisp:: (objResume)

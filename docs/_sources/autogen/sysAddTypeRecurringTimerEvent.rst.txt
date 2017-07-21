@@ -1,0 +1,4 @@
+sysAddTypeRecurringTimerEvent
+=============================
+
+.. autotlisp:: (sysAddTypeRecurringTimerEvent)

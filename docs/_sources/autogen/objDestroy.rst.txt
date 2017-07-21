@@ -1,0 +1,4 @@
+objDestroy
+==========
+
+.. autotlisp:: (objDestroy)

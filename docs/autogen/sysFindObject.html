@@ -1,0 +1,281 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>sysFindObject &#8212; Transcendence 1.8a2 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.8a2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="sysFindObjectAtPos" href="sysFindObjectAtPos.html" />
+    <link rel="prev" title="sysDescendObject" href="sysDescendObject.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sysFindObjectAtPos.html" title="sysFindObjectAtPos"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sysDescendObject.html" title="sysDescendObject"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" accesskey="U">Function List</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="sysDescendObject.html"
+                        title="previous chapter">sysDescendObject</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sysFindObjectAtPos.html"
+                        title="next chapter">sysFindObjectAtPos</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/autogen/sysFindObject.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sysfindobject">
+<h1>sysFindObject<a class="headerlink" href="#sysfindobject" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="tl.sysfindobject">
+<em class="property">function </em><span class="sig-paren">(</span><code class="descname">sysFindObject</code> <em>source</em> <em>criteria</em><span class="sig-paren">)</span> &#x2192; list of objects<a class="headerlink" href="#tl.sysfindobject" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>criteria</strong></p>
+<blockquote class="last">
+<div><p>is a string that must specify one or more of the following categories:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>b</td>
+<td>Include beams</td>
+</tr>
+<tr class="row-even"><td>G</td>
+<td>Include ONLY stargates</td>
+</tr>
+<tr class="row-odd"><td>G:xyz;</td>
+<td>Include ONLY stargate with ID ‘xyz’</td>
+</tr>
+<tr class="row-even"><td>k</td>
+<td>Include markers</td>
+</tr>
+<tr class="row-odd"><td>m</td>
+<td>Include missiles</td>
+</tr>
+<tr class="row-even"><td>s</td>
+<td>Include ships</td>
+</tr>
+<tr class="row-odd"><td>t</td>
+<td>Include stations (including planets)</td>
+</tr>
+<tr class="row-even"><td>T</td>
+<td>Include structure-scale stations</td>
+</tr>
+<tr class="row-odd"><td>t:xyz;</td>
+<td>Same as “t +xyz;”</td>
+</tr>
+<tr class="row-even"><td>T:xyz;</td>
+<td>Same as “T +xyz;”</td>
+</tr>
+<tr class="row-odd"><td>z</td>
+<td>Include the player</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>and may contain any number of the following options:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="13%" />
+<col width="88%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>A</td>
+<td>Active objects only (i.e., objects that can attack)</td>
+</tr>
+<tr class="row-even"><td>D:xyz;</td>
+<td>Only objects with data ‘xyz’</td>
+</tr>
+<tr class="row-odd"><td>E</td>
+<td>Enemies of the source only</td>
+</tr>
+<tr class="row-even"><td>F</td>
+<td>Friends of the source only</td>
+</tr>
+<tr class="row-odd"><td>H</td>
+<td>Only objects whose base = source</td>
+</tr>
+<tr class="row-even"><td>I:angle;</td>
+<td>Only objects that intersect line from source</td>
+</tr>
+<tr class="row-odd"><td>J</td>
+<td>Same sovereign as source</td>
+</tr>
+<tr class="row-even"><td>J:unid;</td>
+<td>Sovereign unid = unid</td>
+</tr>
+<tr class="row-odd"><td>K</td>
+<td>Killed objects only (i.e., objects that cannot attack)</td>
+</tr>
+<tr class="row-even"><td>L:x-y;</td>
+<td>Objects of level x to y.</td>
+</tr>
+<tr class="row-odd"><td>M</td>
+<td>Manufactured objects only (i.e., no planets or asteroids)</td>
+</tr>
+<tr class="row-even"><td>N</td>
+<td>Return only the nearest object to the source</td>
+</tr>
+<tr class="row-odd"><td>N:nn;</td>
+<td>Return only objects within nn light-seconds</td>
+</tr>
+<tr class="row-even"><td>O:docked;</td>
+<td>Ships that are currently docked at source</td>
+</tr>
+<tr class="row-odd"><td>O:escort;</td>
+<td>Ships ordered to escort source</td>
+</tr>
+<tr class="row-even"><td>O:guard;</td>
+<td>Ships ordered to guard source</td>
+</tr>
+<tr class="row-odd"><td>P</td>
+<td>Only objects that can be detected (perceived) by source</td>
+</tr>
+<tr class="row-even"><td>R</td>
+<td>Return only the farthest object from the source</td>
+</tr>
+<tr class="row-odd"><td>R:nn;</td>
+<td>Return only objects greater than nn light-seconds away</td>
+</tr>
+<tr class="row-even"><td>S:sort;</td>
+<td>Sort order (‘d’ = distance ascending; ‘D’ = distance descending</td>
+</tr>
+<tr class="row-odd"><td>V</td>
+<td>Include virtual objects</td>
+</tr>
+<tr class="row-even"><td>X</td>
+<td>Only objects whose target is the source</td>
+</tr>
+<tr class="row-odd"><td>Y</td>
+<td>Only objects angry at (or enemies of) the source</td>
+</tr>
+<tr class="row-even"><td>Z</td>
+<td>Exclude the player</td>
+</tr>
+<tr class="row-odd"><td>+xyz;</td>
+<td>Exclude objects without the given attribute</td>
+</tr>
+<tr class="row-even"><td>-xyz;</td>
+<td>Exclude objects with the given attribute</td>
+</tr>
+<tr class="row-odd"><td>=n</td>
+<td>Only objects of level n. You can also use &gt;, &lt;, &gt;=, and &lt;=.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>+/-<a class="reference external" href="data:xyz">data:xyz</a>;</td>
+<td>Include only/exclude objects with data ‘xyz’</td>
+</tr>
+<tr class="row-even"><td>+/-isPlanet:true;</td>
+<td>Include only/exclude planets</td>
+</tr>
+<tr class="row-odd"><td>+/-property:xyz;</td>
+<td>Include only/exclude objects with property ‘xyz’</td>
+</tr>
+<tr class="row-even"><td>+/-unid:xyz;</td>
+<td>Include only/exclude objects with UNID ‘xyz’</td>
+</tr>
+</tbody>
+</table>
+<p>Order doesn’t matter as long as multi-character items end with semicolons.
+If the source is nil, the center of the system is used for position,
+and other criteria related to the source are ignored.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sysFindObjectAtPos.html" title="sysFindObjectAtPos"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sysDescendObject.html" title="sysDescendObject"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" >Function List</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Kronosaur Productions, LLC..
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

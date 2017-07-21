@@ -1,0 +1,4 @@
+xmlAppendSubElement
+===================
+
+.. autotlisp:: (xmlAppendSubElement)

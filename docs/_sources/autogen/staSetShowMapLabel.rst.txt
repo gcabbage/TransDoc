@@ -1,0 +1,4 @@
+staSetShowMapLabel
+==================
+
+.. autotlisp:: (staSetShowMapLabel)

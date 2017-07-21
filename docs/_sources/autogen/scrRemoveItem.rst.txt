@@ -1,0 +1,4 @@
+scrRemoveItem
+=============
+
+.. autotlisp:: (scrRemoveItem)

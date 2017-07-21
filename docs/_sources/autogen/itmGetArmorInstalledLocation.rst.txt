@@ -1,0 +1,4 @@
+itmGetArmorInstalledLocation
+============================
+
+.. autotlisp:: (itmGetArmorInstalledLocation)

@@ -1,0 +1,4 @@
+shpCanRemoveDevice
+==================
+
+.. autotlisp:: (shpCanRemoveDevice)

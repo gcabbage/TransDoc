@@ -1,0 +1,4 @@
+typDynamicUNID
+==============
+
+.. autotlisp:: (typDynamicUNID)

@@ -1,0 +1,4 @@
+shpRefuelFromItem
+=================
+
+.. autotlisp:: (shpRefuelFromItem)

@@ -1,0 +1,4 @@
+objGetOverlayProperty
+=====================
+
+.. autotlisp:: (objGetOverlayProperty)

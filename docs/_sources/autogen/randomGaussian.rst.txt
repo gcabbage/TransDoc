@@ -1,0 +1,4 @@
+randomGaussian
+==============
+
+.. autotlisp:: (randomGaussian)

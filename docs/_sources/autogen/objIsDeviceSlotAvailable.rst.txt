@@ -1,0 +1,4 @@
+objIsDeviceSlotAvailable
+========================
+
+.. autotlisp:: (objIsDeviceSlotAvailable)

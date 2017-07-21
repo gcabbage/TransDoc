@@ -1,0 +1,4 @@
+objGetShipwreckType
+===================
+
+.. autotlisp:: (objGetShipwreckType)

@@ -1,0 +1,4 @@
+objGetImageDesc
+===============
+
+.. autotlisp:: (objGetImageDesc)

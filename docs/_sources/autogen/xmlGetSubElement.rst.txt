@@ -1,0 +1,4 @@
+xmlGetSubElement
+================
+
+.. autotlisp:: (xmlGetSubElement)

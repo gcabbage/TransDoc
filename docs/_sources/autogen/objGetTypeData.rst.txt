@@ -1,0 +1,4 @@
+objGetTypeData
+==============
+
+.. autotlisp:: (objGetTypeData)

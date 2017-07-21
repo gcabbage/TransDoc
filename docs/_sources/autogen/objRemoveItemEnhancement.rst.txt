@@ -1,0 +1,4 @@
+objRemoveItemEnhancement
+========================
+
+.. autotlisp:: (objRemoveItemEnhancement)

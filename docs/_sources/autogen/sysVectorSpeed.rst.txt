@@ -1,0 +1,4 @@
+sysVectorSpeed
+==============
+
+.. autotlisp:: (sysVectorSpeed)

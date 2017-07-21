@@ -1,0 +1,4 @@
+itmSetTypeData
+==============
+
+.. autotlisp:: (itmSetTypeData)

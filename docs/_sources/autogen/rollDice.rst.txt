@@ -1,0 +1,4 @@
+rollDice
+========
+
+.. autotlisp:: (rollDice)

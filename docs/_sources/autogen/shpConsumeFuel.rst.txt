@@ -1,0 +1,4 @@
+shpConsumeFuel
+==============
+
+.. autotlisp:: (shpConsumeFuel)

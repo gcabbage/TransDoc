@@ -1,0 +1,4 @@
+msnDecline
+==========
+
+.. autotlisp:: (msnDecline)

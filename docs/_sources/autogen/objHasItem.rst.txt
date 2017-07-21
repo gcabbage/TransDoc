@@ -1,0 +1,4 @@
+objHasItem
+==========
+
+.. autotlisp:: (objHasItem)

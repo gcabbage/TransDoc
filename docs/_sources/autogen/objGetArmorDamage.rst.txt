@@ -1,0 +1,4 @@
+objGetArmorDamage
+=================
+
+.. autotlisp:: (objGetArmorDamage)

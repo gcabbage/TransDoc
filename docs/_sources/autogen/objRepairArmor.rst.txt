@@ -1,0 +1,4 @@
+objRepairArmor
+==============
+
+.. autotlisp:: (objRepairArmor)

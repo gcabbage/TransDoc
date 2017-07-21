@@ -1,0 +1,4 @@
+scrIsActionEnabled
+==================
+
+.. autotlisp:: (scrIsActionEnabled)

@@ -1,0 +1,4 @@
+typGetData
+==========
+
+.. autotlisp:: (typGetData)

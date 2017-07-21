@@ -1,0 +1,4 @@
+sysGetSystemType
+================
+
+.. autotlisp:: (sysGetSystemType)

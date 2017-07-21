@@ -1,0 +1,4 @@
+msnGetStaticData
+================
+
+.. autotlisp:: (msnGetStaticData)

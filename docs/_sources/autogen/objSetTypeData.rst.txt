@@ -1,0 +1,4 @@
+objSetTypeData
+==============
+
+.. autotlisp:: (objSetTypeData)

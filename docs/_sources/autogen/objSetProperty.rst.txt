@@ -1,0 +1,4 @@
+objSetProperty
+==============
+
+.. autotlisp:: (objSetProperty)

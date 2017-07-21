@@ -1,0 +1,4 @@
+itmIsEnhanced
+=============
+
+.. autotlisp:: (itmIsEnhanced)

@@ -1,0 +1,4 @@
+objRemoveOverlay
+================
+
+.. autotlisp:: (objRemoveOverlay)

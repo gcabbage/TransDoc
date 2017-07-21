@@ -1,0 +1,4 @@
+scrEnableAction
+===============
+
+.. autotlisp:: (scrEnableAction)

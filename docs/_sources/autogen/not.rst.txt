@@ -1,0 +1,4 @@
+not
+===
+
+.. autotlisp:: (not)

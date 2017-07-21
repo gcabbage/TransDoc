@@ -1,0 +1,4 @@
+objFixParalysis
+===============
+
+.. autotlisp:: (objFixParalysis)

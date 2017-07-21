@@ -1,0 +1,4 @@
+objGetDataField
+===============
+
+.. autotlisp:: (objGetDataField)

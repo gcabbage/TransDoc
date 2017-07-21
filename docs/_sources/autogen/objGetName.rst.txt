@@ -1,0 +1,4 @@
+objGetName
+==========
+
+.. autotlisp:: (objGetName)

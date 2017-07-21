@@ -1,0 +1,4 @@
+objGetArmorCriticality
+======================
+
+.. autotlisp:: (objGetArmorCriticality)

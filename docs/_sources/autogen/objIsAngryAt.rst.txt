@@ -1,0 +1,4 @@
+objIsAngryAt
+============
+
+.. autotlisp:: (objIsAngryAt)

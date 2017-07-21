@@ -1,0 +1,4 @@
+shpGetFuelNeeded
+================
+
+.. autotlisp:: (shpGetFuelNeeded)

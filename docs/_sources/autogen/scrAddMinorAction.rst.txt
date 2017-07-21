@@ -1,0 +1,4 @@
+scrAddMinorAction
+=================
+
+.. autotlisp:: (scrAddMinorAction)

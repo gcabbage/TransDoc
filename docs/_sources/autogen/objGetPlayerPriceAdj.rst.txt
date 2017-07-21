@@ -1,0 +1,4 @@
+objGetPlayerPriceAdj
+====================
+
+.. autotlisp:: (objGetPlayerPriceAdj)

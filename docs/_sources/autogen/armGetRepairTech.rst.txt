@@ -1,0 +1,4 @@
+armGetRepairTech
+================
+
+.. autotlisp:: (armGetRepairTech)

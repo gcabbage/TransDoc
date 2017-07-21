@@ -1,0 +1,4 @@
+scrGetListCursor
+================
+
+.. autotlisp:: (scrGetListCursor)

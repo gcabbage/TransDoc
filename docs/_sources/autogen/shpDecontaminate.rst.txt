@@ -1,0 +1,4 @@
+shpDecontaminate
+================
+
+.. autotlisp:: (shpDecontaminate)

@@ -1,0 +1,4 @@
+isint
+=====
+
+.. autotlisp:: (isint)

@@ -1,0 +1,4 @@
+objSetKnown
+===========
+
+.. autotlisp:: (objSetKnown)

@@ -1,0 +1,4 @@
+sovSetDisposition
+=================
+
+.. autotlisp:: (sovSetDisposition)

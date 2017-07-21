@@ -1,0 +1,4 @@
+objGetBuyPrice
+==============
+
+.. autotlisp:: (objGetBuyPrice)

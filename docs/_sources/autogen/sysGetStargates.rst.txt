@@ -1,0 +1,4 @@
+sysGetStargates
+===============
+
+.. autotlisp:: (sysGetStargates)

@@ -1,0 +1,4 @@
+isprimitive
+===========
+
+.. autotlisp:: (isprimitive)

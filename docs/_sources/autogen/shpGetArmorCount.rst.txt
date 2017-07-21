@@ -1,0 +1,4 @@
+shpGetArmorCount
+================
+
+.. autotlisp:: (shpGetArmorCount)

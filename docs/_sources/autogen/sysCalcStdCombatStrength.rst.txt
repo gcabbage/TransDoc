@@ -1,0 +1,4 @@
+sysCalcStdCombatStrength
+========================
+
+.. autotlisp:: (sysCalcStdCombatStrength)

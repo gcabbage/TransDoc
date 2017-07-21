@@ -1,0 +1,4 @@
+shpEnhanceItem
+==============
+
+.. autotlisp:: (shpEnhanceItem)

@@ -1,0 +1,4 @@
+armGetRepairCost
+================
+
+.. autotlisp:: (armGetRepairCost)

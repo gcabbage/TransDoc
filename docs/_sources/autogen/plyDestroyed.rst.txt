@@ -1,0 +1,4 @@
+plyDestroyed
+============
+
+.. autotlisp:: (plyDestroyed)

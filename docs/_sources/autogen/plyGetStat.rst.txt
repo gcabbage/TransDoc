@@ -1,0 +1,4 @@
+plyGetStat
+==========
+
+.. autotlisp:: (plyGetStat)

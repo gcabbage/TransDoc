@@ -1,0 +1,4 @@
+shpRemoveDevice
+===============
+
+.. autotlisp:: (shpRemoveDevice)

@@ -1,0 +1,4 @@
+sysVectorPolarVelocity
+======================
+
+.. autotlisp:: (sysVectorPolarVelocity)

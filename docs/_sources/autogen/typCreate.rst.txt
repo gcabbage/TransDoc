@@ -1,0 +1,4 @@
+typCreate
+=========
+
+.. autotlisp:: (typCreate)

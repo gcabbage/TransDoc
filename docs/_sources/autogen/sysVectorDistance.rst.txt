@@ -1,0 +1,4 @@
+sysVectorDistance
+=================
+
+.. autotlisp:: (sysVectorDistance)

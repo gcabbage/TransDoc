@@ -1,0 +1,4 @@
+itmIsInstalled
+==============
+
+.. autotlisp:: (itmIsInstalled)

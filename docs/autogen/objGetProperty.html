@@ -1,0 +1,244 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>objGetProperty &#8212; Transcendence 1.8a2 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.8a2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="objGetRefuelItemAndPrice" href="objGetRefuelItemAndPrice.html" />
+    <link rel="prev" title="objGetPos" href="objGetPos.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="objGetRefuelItemAndPrice.html" title="objGetRefuelItemAndPrice"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="objGetPos.html" title="objGetPos"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" accesskey="U">Function List</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="objGetPos.html"
+                        title="previous chapter">objGetPos</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="objGetRefuelItemAndPrice.html"
+                        title="next chapter">objGetRefuelItemAndPrice</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/autogen/objGetProperty.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="objgetproperty">
+<h1>objGetProperty<a class="headerlink" href="#objgetproperty" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="tl.objgetproperty">
+<em class="property">function </em><span class="sig-paren">(</span><code class="descname">objGetProperty</code> <em>obj</em> <em>property</em><span class="sig-paren">)</span> &#x2192; value<a class="headerlink" href="#tl.objgetproperty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>property</strong></p>
+<blockquote>
+<div><p>(all)</p>
+<p><code class="docutils literal"><span class="pre">'ascended</span></code>
+<code class="docutils literal"><span class="pre">'category</span></code> -&gt; <code class="docutils literal"><span class="pre">'beam</span></code> | <code class="docutils literal"><span class="pre">'effect</span></code> | <code class="docutils literal"><span class="pre">'marker</span></code> | <code class="docutils literal"><span class="pre">'missile</span></code> | <code class="docutils literal"><span class="pre">'ship</span></code> | <code class="docutils literal"><span class="pre">'station</span></code>
+<code class="docutils literal"><span class="pre">'commsKey</span></code>
+<code class="docutils literal"><span class="pre">'currency</span></code> -&gt; currency type UNID
+<code class="docutils literal"><span class="pre">'cyberDefenseLevel</span></code>
+<code class="docutils literal"><span class="pre">'destiny</span></code>
+<code class="docutils literal"><span class="pre">'dockingPorts</span></code> -&gt; list of structs with the keys:</p>
+<p>objID: ID of docked object, if any
+pos: port position
+status: <code class="docutils literal"><span class="pre">'empty</span></code> | <code class="docutils literal"><span class="pre">'inUse</span></code></p>
+<p><code class="docutils literal"><span class="pre">'hasDockingPorts</span></code>
+<code class="docutils literal"><span class="pre">'id</span></code>
+<code class="docutils literal"><span class="pre">'installArmorMaxLevel</span></code>
+<code class="docutils literal"><span class="pre">'installDeviceMaxLevel</span></code>
+<code class="docutils literal"><span class="pre">'installDeviceUpgradeOnly</span></code> -&gt; true if it only installs devices as part of a purchase
+<code class="docutils literal"><span class="pre">'known</span></code>
+<code class="docutils literal"><span class="pre">'level</span></code>
+<code class="docutils literal"><span class="pre">'mass</span></code> -&gt; hull mass in tons
+<code class="docutils literal"><span class="pre">'paintLayer</span></code> -&gt; <code class="docutils literal"><span class="pre">'background</span></code> | <code class="docutils literal"><span class="pre">'space</span></code> | <code class="docutils literal"><span class="pre">'stations</span></code> | <code class="docutils literal"><span class="pre">'ships</span></code> | <code class="docutils literal"><span class="pre">'effects</span></code> | <code class="docutils literal"><span class="pre">'overhang</span></code>
+<code class="docutils literal"><span class="pre">'playerMissionsGiven</span></code>
+<code class="docutils literal"><span class="pre">'radioactive</span></code>
+<code class="docutils literal"><span class="pre">'refuelMaxLevel</span></code>
+<code class="docutils literal"><span class="pre">'removeDeviceMaxLevel</span></code>
+<code class="docutils literal"><span class="pre">'repairArmorMaxLevel</span></code>
+<code class="docutils literal"><span class="pre">'scale</span></code> -&gt; <code class="docutils literal"><span class="pre">'star</span></code> | <code class="docutils literal"><span class="pre">'world</span></code> | <code class="docutils literal"><span class="pre">'station</span></code> | <code class="docutils literal"><span class="pre">'ship</span></code> | <code class="docutils literal"><span class="pre">'flotsam</span></code>
+<code class="docutils literal"><span class="pre">'sovereign</span></code>
+<code class="docutils literal"><span class="pre">'stealth</span></code>
+<code class="docutils literal"><span class="pre">'underAttack</span></code></p>
+</div></blockquote>
+<p><strong>property</strong></p>
+<blockquote>
+<div><p>(ships)</p>
+<p><code class="docutils literal"><span class="pre">'alwaysLeaveWreck</span></code>
+<code class="docutils literal"><span class="pre">'availableDeviceSlots</span></code>
+<code class="docutils literal"><span class="pre">'availableNonWeaponSlots</span></code>
+<code class="docutils literal"><span class="pre">'availableWeaponSlots</span></code>
+<code class="docutils literal"><span class="pre">'blindingImmune</span></code>
+<code class="docutils literal"><span class="pre">'cargoSpace</span></code> -&gt; in tons
+<code class="docutils literal"><span class="pre">'character</span></code>
+<code class="docutils literal"><span class="pre">'characterClass</span></code>
+<code class="docutils literal"><span class="pre">'deviceDamageImmune</span></code>
+<code class="docutils literal"><span class="pre">'deviceDisruptImmune</span></code>
+<code class="docutils literal"><span class="pre">'disintegrationImmune</span></code>
+<code class="docutils literal"><span class="pre">'dockedAtID</span></code>
+<code class="docutils literal"><span class="pre">'dockingEnabled</span></code>
+<code class="docutils literal"><span class="pre">'DockingPortCount</span></code>
+<code class="docutils literal"><span class="pre">'drivePowerUse</span></code> -&gt; in kW
+<code class="docutils literal"><span class="pre">'EMPImmune</span></code>
+<code class="docutils literal"><span class="pre">'fuelCapacity</span></code> -&gt; in He3 fuel rods
+<code class="docutils literal"><span class="pre">'fuelCapacityExact</span></code> -&gt; 2500 = 1 He3 fuel rod
+<code class="docutils literal"><span class="pre">'fuelCriteria</span></code> -&gt; criteria string
+<code class="docutils literal"><span class="pre">'fuelEfficiency</span></code> -&gt; 15 = standard, more is better
+<code class="docutils literal"><span class="pre">'fuelEfficiencyBonus</span></code> -&gt; increased efficiency over standard, in %
+<code class="docutils literal"><span class="pre">'fuelLeft</span></code> -&gt; in He3 fuel rods
+<code class="docutils literal"><span class="pre">'fuelLeftExact</span></code> -&gt; 2500 = 1 He3 fuel rod
+<code class="docutils literal"><span class="pre">'healerLeft</span></code>
+<code class="docutils literal"><span class="pre">'interiorHP</span></code>
+<code class="docutils literal"><span class="pre">'maxInteriorHP</span></code>
+<code class="docutils literal"><span class="pre">'maxFuel</span></code> -&gt; in He3 fuel rods
+<code class="docutils literal"><span class="pre">'maxFuelExact</span></code> -&gt; 2500 = 1 He3 fuel rod
+<code class="docutils literal"><span class="pre">'maxSpeed</span></code> -&gt; in % c
+<code class="docutils literal"><span class="pre">'openDockingPortCount</span></code>
+<code class="docutils literal"><span class="pre">'operatingSpeed</span></code> -&gt; <code class="docutils literal"><span class="pre">'emergency</span></code> | <code class="docutils literal"><span class="pre">'full</span></code> | <code class="docutils literal"><span class="pre">'half</span></code> | <code class="docutils literal"><span class="pre">'quarter</span></code>
+<code class="docutils literal"><span class="pre">'playerWingman</span></code>
+<code class="docutils literal"><span class="pre">'power</span></code> -&gt; max reactor output in kW
+<code class="docutils literal"><span class="pre">'powerUse</span></code> -&gt; current power draw in kW
+<code class="docutils literal"><span class="pre">'radiationImmune</span></code>
+<code class="docutils literal"><span class="pre">'rotation</span></code> -&gt; current facing in degrees, counterclockwise from right
+<code class="docutils literal"><span class="pre">'rotationSpeed</span></code> -&gt; in degrees per tick, clockwise positive
+<code class="docutils literal"><span class="pre">'selectedLauncher</span></code>
+<code class="docutils literal"><span class="pre">'selectedMissile</span></code>
+<code class="docutils literal"><span class="pre">'selectedWeapon</span></code>
+<code class="docutils literal"><span class="pre">'shatterImmune</span></code>
+<code class="docutils literal"><span class="pre">'thrust</span></code> -&gt; in GN
+<code class="docutils literal"><span class="pre">'thrustToWeight</span></code> -&gt; acceleration, 1 = 500 m/s^2 (ships stats show this / 1000)</p>
+</div></blockquote>
+<p><strong>property</strong></p>
+<blockquote>
+<div><p>(stations)</p>
+<p><code class="docutils literal"><span class="pre">'abandoned</span></code>
+<code class="docutils literal"><span class="pre">'active</span></code>
+<code class="docutils literal"><span class="pre">'angry</span></code>
+<code class="docutils literal"><span class="pre">'barrier</span></code>
+<code class="docutils literal"><span class="pre">'destNodeID</span></code>
+<code class="docutils literal"><span class="pre">'destStargateID</span></code>
+<code class="docutils literal"><span class="pre">'dockingPortCount</span></code>
+<code class="docutils literal"><span class="pre">'hp</span></code>
+<code class="docutils literal"><span class="pre">'ignoreFriendlyFire</span></code>
+<code class="docutils literal"><span class="pre">'immutable</span></code>
+<code class="docutils literal"><span class="pre">'maxHP</span></code>
+<code class="docutils literal"><span class="pre">'maxStructuralHP</span></code>
+<code class="docutils literal"><span class="pre">'openDockingPortCount</span></code>
+<code class="docutils literal"><span class="pre">'orbit</span></code>
+<code class="docutils literal"><span class="pre">'parallax</span></code>
+<code class="docutils literal"><span class="pre">'playerBlacklisted</span></code>
+<code class="docutils literal"><span class="pre">'shipConstructionEnabled</span></code>
+<code class="docutils literal"><span class="pre">'shipReinforcementEnabled</span></code>
+<code class="docutils literal"><span class="pre">'showMapLabel</span></code>
+<code class="docutils literal"><span class="pre">'stargateID</span></code>
+<code class="docutils literal"><span class="pre">'structuralHP</span></code></p>
+</div></blockquote>
+<p><strong>property</strong></p>
+<blockquote>
+<div><p>(missiles)</p>
+<p><code class="docutils literal"><span class="pre">'lifeLeft</span></code>
+<code class="docutils literal"><span class="pre">'rotation</span></code>
+<code class="docutils literal"><span class="pre">'sourceObj</span></code>
+<code class="docutils literal"><span class="pre">'target</span></code></p>
+</div></blockquote>
+<p><strong>property</strong></p>
+<blockquote class="last">
+<div><p>(markers)</p>
+<p><code class="docutils literal"><span class="pre">'style</span></code> -&gt; <code class="docutils literal"><span class="pre">'smallCross</span></code></p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">All type properties (accessed via <a class="reference internal" href="typGetProperty.html#tl.typgetproperty" title="tl.typgetproperty"><code class="xref tl tl-function docutils literal"><span class="pre">typGetProperty</span></code></a>) are also valid object properties.</p>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="objGetRefuelItemAndPrice.html" title="objGetRefuelItemAndPrice"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="objGetPos.html" title="objGetPos"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" >Function List</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Kronosaur Productions, LLC..
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

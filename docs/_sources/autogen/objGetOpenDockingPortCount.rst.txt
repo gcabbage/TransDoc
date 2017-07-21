@@ -1,0 +1,4 @@
+objGetOpenDockingPortCount
+==========================
+
+.. autotlisp:: (objGetOpenDockingPortCount)

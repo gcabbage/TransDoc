@@ -1,0 +1,4 @@
+objRecordBuyItem
+================
+
+.. autotlisp:: (objRecordBuyItem)

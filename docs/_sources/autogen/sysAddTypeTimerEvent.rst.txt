@@ -1,0 +1,4 @@
+sysAddTypeTimerEvent
+====================
+
+.. autotlisp:: (sysAddTypeTimerEvent)

@@ -1,0 +1,4 @@
+objClearIdentified
+==================
+
+.. autotlisp:: (objClearIdentified)

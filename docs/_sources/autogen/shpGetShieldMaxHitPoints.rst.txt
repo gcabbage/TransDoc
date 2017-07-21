@@ -1,0 +1,4 @@
+shpGetShieldMaxHitPoints
+========================
+
+.. autotlisp:: (shpGetShieldMaxHitPoints)

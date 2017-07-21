@@ -1,0 +1,4 @@
+sysSetKnown
+===========
+
+.. autotlisp:: (sysSetKnown)

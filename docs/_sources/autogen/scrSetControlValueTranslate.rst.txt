@@ -1,0 +1,4 @@
+scrSetControlValueTranslate
+===========================
+
+.. autotlisp:: (scrSetControlValueTranslate)

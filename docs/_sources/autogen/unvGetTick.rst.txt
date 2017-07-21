@@ -1,0 +1,4 @@
+unvGetTick
+==========
+
+.. autotlisp:: (unvGetTick)

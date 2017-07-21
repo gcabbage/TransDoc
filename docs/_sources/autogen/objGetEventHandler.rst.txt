@@ -1,0 +1,4 @@
+objGetEventHandler
+==================
+
+.. autotlisp:: (objGetEventHandler)

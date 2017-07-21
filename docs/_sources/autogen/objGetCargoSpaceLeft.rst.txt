@@ -1,0 +1,4 @@
+objGetCargoSpaceLeft
+====================
+
+.. autotlisp:: (objGetCargoSpaceLeft)

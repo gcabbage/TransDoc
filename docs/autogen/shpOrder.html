@@ -1,0 +1,363 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>shpOrder &#8212; Transcendence 1.8a2 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.8a2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="shpOrderImmediate" href="shpOrderImmediate.html" />
+    <link rel="prev" title="shpMakeRadioactive" href="shpMakeRadioactive.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="shpOrderImmediate.html" title="shpOrderImmediate"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="shpMakeRadioactive.html" title="shpMakeRadioactive"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" accesskey="U">Function List</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="shpMakeRadioactive.html"
+                        title="previous chapter">shpMakeRadioactive</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="shpOrderImmediate.html"
+                        title="next chapter">shpOrderImmediate</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/autogen/shpOrder.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="shporder">
+<h1>shpOrder<a class="headerlink" href="#shporder" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="tl.shporder">
+<em class="property">function </em><span class="sig-paren">(</span><code class="descname">shpOrder</code> <em>ship</em> <em>order</em> <em>[target]</em> <em>[count]</em><span class="sig-paren">)</span> &#x2192; True/Nil<a class="headerlink" href="#tl.shporder" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>order</strong></p>
+<blockquote class="last">
+<div><table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="30%" />
+<col width="30%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'aim</span></code></td>
+<td>obj</td>
+<td>Aim, but do not fire</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'approach</span></code></td>
+<td>obj [dist]</td>
+<td>Approach target</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'attack</span></code></td>
+<td>obj [time]</td>
+<td>Attack target</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'attackArea</span></code></td>
+<td>obj dist [time]</td>
+<td>Attack around target</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'attackHold</span></code></td>
+<td>obj [time]</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="41%" />
+<col width="23%" />
+<col width="36%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'attackNearestEnemy</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Attack nearest enemy</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'attackPlayerOnReturn</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Wait and attack player</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'attackStation</span></code></td>
+<td>obj [?]</td>
+<td>Attack target station</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'bombard</span></code></td>
+<td>obj [time]</td>
+<td>Hold and attack target</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'dock</span></code></td>
+<td>obj</td>
+<td>Dock with target</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'escort</span></code></td>
+<td>obj [ang] [dist]</td>
+<td>Escort target</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'fireEvent</span></code></td>
+<td>obj event</td>
+<td>Fire event on target</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'follow</span></code></td>
+<td>obj</td>
+<td>Follow without defending</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'followPlayerThroughGate</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'gate</span></code></td>
+<td>[obj]</td>
+<td>Gate out of system</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'gateOnStationDestroyed</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Flee if station destroyed</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'gateOnThreat</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Flee if threatened</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'goto</span></code></td>
+<td>obj [dist]</td>
+<td>Goto target</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'gotoPos</span></code></td>
+<td>pos</td>
+<td>Goto position</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'guard</span></code></td>
+<td>obj</td>
+<td>Guard target</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'hold</span></code></td>
+<td>[time]</td>
+<td>Stay in place</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'holdAndAttack</span></code></td>
+<td>obj [time]</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'holdCourse</span></code></td>
+<td>course dist</td>
+<td>Hold course</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'loot</span></code></td>
+<td>obj</td>
+<td>Loot target</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'mine</span></code></td>
+<td>obj</td>
+<td>Mine asteroids [base]</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'navPath</span></code></td>
+<td>navID</td>
+<td>Follow nav path ID</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'orbit</span></code></td>
+<td>obj dist [time]</td>
+<td>Orbit target</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'patrol</span></code></td>
+<td>obj [dist]</td>
+<td>Patrol around target</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'scavenge</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Scavenge for scraps</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'sendMessage</span></code></td>
+<td>obj msg</td>
+<td>Send message to target</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'sentry</span></code></td>
+<td>obj [time]</td>
+<td>Guard target (turrets)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'tradeRoute</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Move between stations</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'turnTo</span></code></td>
+<td>ang</td>
+<td>Turn to face angle</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'wait</span></code></td>
+<td>[time]</td>
+<td>Wait, do not attack</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'waitForEnemy</span></code></td>
+<td>[time]</td>
+<td>Wait until enemy in LRS</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'waitForPlayer</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Wait for player to return</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="29%" />
+<col width="71%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'waitForTarget</span></code></td>
+<td>obj [dist] [time] Wait until target in range</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="34%" />
+<col width="19%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'waitForThreat</span></code></td>
+<td>[time]</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'waitForUndock</span></code></td>
+<td>obj [time]</td>
+<td>Wait for target to undock</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'wander</span></code></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>Wander, avoiding enemies</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="shpOrderImmediate.html" title="shpOrderImmediate"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="shpMakeRadioactive.html" title="shpMakeRadioactive"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" >Function List</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Kronosaur Productions, LLC..
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

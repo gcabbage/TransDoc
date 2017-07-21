@@ -1,0 +1,4 @@
+staIsEncountered
+================
+
+.. autotlisp:: (staIsEncountered)

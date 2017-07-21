@@ -1,0 +1,4 @@
+plyRedirectMessage
+==================
+
+.. autotlisp:: (plyRedirectMessage)

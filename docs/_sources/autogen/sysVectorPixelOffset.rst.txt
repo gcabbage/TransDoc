@@ -1,0 +1,4 @@
+sysVectorPixelOffset
+====================
+
+.. autotlisp:: (sysVectorPixelOffset)

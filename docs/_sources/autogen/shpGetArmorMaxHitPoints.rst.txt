@@ -1,0 +1,4 @@
+shpGetArmorMaxHitPoints
+=======================
+
+.. autotlisp:: (shpGetArmorMaxHitPoints)

@@ -1,0 +1,4 @@
+objGetMaxPower
+==============
+
+.. autotlisp:: (objGetMaxPower)

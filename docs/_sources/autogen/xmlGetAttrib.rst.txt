@@ -1,0 +1,4 @@
+xmlGetAttrib
+============
+
+.. autotlisp:: (xmlGetAttrib)

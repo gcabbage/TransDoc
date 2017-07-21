@@ -1,0 +1,4 @@
+subtract
+========
+
+.. autotlisp:: (subtract)

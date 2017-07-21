@@ -1,0 +1,4 @@
+shpInstallDevice
+================
+
+.. autotlisp:: (shpInstallDevice)

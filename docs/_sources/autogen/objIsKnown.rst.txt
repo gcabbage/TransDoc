@@ -1,0 +1,4 @@
+objIsKnown
+==========
+
+.. autotlisp:: (objIsKnown)

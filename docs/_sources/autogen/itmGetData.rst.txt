@@ -1,0 +1,4 @@
+itmGetData
+==========
+
+.. autotlisp:: (itmGetData)

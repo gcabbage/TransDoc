@@ -1,0 +1,4 @@
+xmlAppendText
+=============
+
+.. autotlisp:: (xmlAppendText)

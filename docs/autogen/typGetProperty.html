@@ -1,0 +1,191 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>typGetProperty &#8212; Transcendence 1.8a2 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.8a2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="typGetStaticData" href="typGetStaticData.html" />
+    <link rel="prev" title="typGetDataField" href="typGetDataField.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="typGetStaticData.html" title="typGetStaticData"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="typGetDataField.html" title="typGetDataField"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" accesskey="U">Function List</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="typGetDataField.html"
+                        title="previous chapter">typGetDataField</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="typGetStaticData.html"
+                        title="next chapter">typGetStaticData</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/autogen/typGetProperty.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="typgetproperty">
+<h1>typGetProperty<a class="headerlink" href="#typgetproperty" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="tl.typgetproperty">
+<em class="property">function </em><span class="sig-paren">(</span><code class="descname">typGetProperty</code> <em>unid</em> <em>property</em><span class="sig-paren">)</span> &#x2192; value<a class="headerlink" href="#tl.typgetproperty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>property</strong></p>
+<blockquote>
+<div><p>(all):</p>
+<p><code class="docutils literal"><span class="pre">'apiVersion</span></code>
+<code class="docutils literal"><span class="pre">'class</span></code>
+<code class="docutils literal"><span class="pre">'extension</span></code></p>
+</div></blockquote>
+<p><strong>property</strong></p>
+<blockquote>
+<div><p>(player ships):</p>
+<p><code class="docutils literal"><span class="pre">'dockServicesScreen</span></code>
+<code class="docutils literal"><span class="pre">'shipStatusScreen</span></code>
+<code class="docutils literal"><span class="pre">'startingSystem</span></code></p>
+</div></blockquote>
+<p><strong>property</strong></p>
+<blockquote class="last">
+<div><p>(ships):</p>
+<p><code class="docutils literal"><span class="pre">'armorCount</span></code>
+<code class="docutils literal"><span class="pre">'armorHP</span></code>
+<code class="docutils literal"><span class="pre">'armorItems</span></code>
+<code class="docutils literal"><span class="pre">'balanceType</span></code>
+<code class="docutils literal"><span class="pre">'cargoSpace</span></code>
+<code class="docutils literal"><span class="pre">'combatStrength</span></code>
+<code class="docutils literal"><span class="pre">'damage</span></code>
+<code class="docutils literal"><span class="pre">'defaultSovereign</span></code>
+<code class="docutils literal"><span class="pre">'defenseStrength</span></code>
+<code class="docutils literal"><span class="pre">'deviceSlots</span></code>
+<code class="docutils literal"><span class="pre">'deviceSlotsNonWeapons</span></code>
+<code class="docutils literal"><span class="pre">'deviceSlotsWeapons</span></code>
+<code class="docutils literal"><span class="pre">'deviceItems</span></code>
+<code class="docutils literal"><span class="pre">'dodgeRate</span></code>
+<code class="docutils literal"><span class="pre">'driveImage</span></code>
+<code class="docutils literal"><span class="pre">'explosionType</span></code>
+<code class="docutils literal"><span class="pre">'fireAccuracy</span></code>
+<code class="docutils literal"><span class="pre">'fireRangeAdj</span></code>
+<code class="docutils literal"><span class="pre">'fireRateAdj</span></code>
+<code class="docutils literal"><span class="pre">'genericName</span></code>
+<code class="docutils literal"><span class="pre">'hp</span></code>
+<code class="docutils literal"><span class="pre">'hullMass</span></code>
+<code class="docutils literal"><span class="pre">'installDeviceMaxLevel</span></code>
+<code class="docutils literal"><span class="pre">'launcher</span></code>
+<code class="docutils literal"><span class="pre">'launcherUNID</span></code>
+<code class="docutils literal"><span class="pre">'level</span></code>
+<code class="docutils literal"><span class="pre">'maneuver</span></code>
+<code class="docutils literal"><span class="pre">'manufacturer</span></code>
+<code class="docutils literal"><span class="pre">'mass</span></code>
+<code class="docutils literal"><span class="pre">'maxArmorMass</span></code>
+<code class="docutils literal"><span class="pre">'maxCargoSpace</span></code>
+<code class="docutils literal"><span class="pre">'maxRotation</span></code>
+<code class="docutils literal"><span class="pre">'maxSpeed</span></code>
+<code class="docutils literal"><span class="pre">'name</span></code>
+<code class="docutils literal"><span class="pre">'primaryArmor</span></code>
+<code class="docutils literal"><span class="pre">'primaryArmorUNID</span></code>
+<code class="docutils literal"><span class="pre">'primaryWeapon</span></code>
+<code class="docutils literal"><span class="pre">'primaryWeaponRange</span></code>
+<code class="docutils literal"><span class="pre">'primaryWeaponRangeAdj</span></code>
+<code class="docutils literal"><span class="pre">'primaryWeaponUNID</span></code>
+<code class="docutils literal"><span class="pre">'regen</span></code>
+<code class="docutils literal"><span class="pre">'score</span></code>
+<code class="docutils literal"><span class="pre">'size</span></code>
+<code class="docutils literal"><span class="pre">'shield</span></code>
+<code class="docutils literal"><span class="pre">'shieldsUNID</span></code>
+<code class="docutils literal"><span class="pre">'thrust</span></code>
+<code class="docutils literal"><span class="pre">'thrustToWeight</span></code>
+<code class="docutils literal"><span class="pre">'thrusterPower</span></code>
+<code class="docutils literal"><span class="pre">'treasureValue</span></code>
+<code class="docutils literal"><span class="pre">'wreckChance</span></code></p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="typGetStaticData.html" title="typGetStaticData"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="typGetDataField.html" title="typGetDataField"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" >Function List</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Kronosaur Productions, LLC..
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

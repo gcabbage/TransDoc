@@ -1,0 +1,4 @@
+staGetDockedShips
+=================
+
+.. autotlisp:: (staGetDockedShips)

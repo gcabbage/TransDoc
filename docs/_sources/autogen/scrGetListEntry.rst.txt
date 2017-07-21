@@ -1,0 +1,4 @@
+scrGetListEntry
+===============
+
+.. autotlisp:: (scrGetListEntry)

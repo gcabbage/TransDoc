@@ -1,0 +1,4 @@
+typGetStaticData
+================
+
+.. autotlisp:: (typGetStaticData)

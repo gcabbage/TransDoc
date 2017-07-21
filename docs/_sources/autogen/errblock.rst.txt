@@ -1,0 +1,4 @@
+errblock
+========
+
+.. autotlisp:: (errblock)

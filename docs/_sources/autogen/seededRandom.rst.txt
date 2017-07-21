@@ -1,0 +1,4 @@
+seededRandom
+============
+
+.. autotlisp:: (seededRandom)

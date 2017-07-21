@@ -1,0 +1,197 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>msnGetProperty &#8212; Transcendence 1.8a2 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.8a2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="msnGetStaticData" href="msnGetStaticData.html" />
+    <link rel="prev" title="msnGetObjRefData" href="msnGetObjRefData.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="msnGetStaticData.html" title="msnGetStaticData"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="msnGetObjRefData.html" title="msnGetObjRefData"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" accesskey="U">Function List</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="msnGetObjRefData.html"
+                        title="previous chapter">msnGetObjRefData</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="msnGetStaticData.html"
+                        title="next chapter">msnGetStaticData</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/autogen/msnGetProperty.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="msngetproperty">
+<h1>msnGetProperty<a class="headerlink" href="#msngetproperty" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="tl.msngetproperty">
+<em class="property">function </em><span class="sig-paren">(</span><code class="descname">msnGetProperty</code> <em>missionObj</em> <em>property</em><span class="sig-paren">)</span> &#x2192; value<a class="headerlink" href="#tl.msngetproperty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>property</strong></p>
+<blockquote class="last">
+<div><table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="38%" />
+<col width="62%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'acceptedOn</span></code></td>
+<td>Tick on which player accepted mission (or Nil)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'canBeDeclined</span></code></td>
+<td>Mission can be declined by player</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'canBeDeleted</span></code></td>
+<td>Mission can be deleted by player</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'debrieferID</span></code></td>
+<td>ID of the object that will debrief the player</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'forceUndockAfterDebrief</span></code></td>
+<td>Force undock after showing debrief screen</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'id</span></code></td>
+<td>Mission object ID</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'isActive</span></code></td>
+<td>Is an active player mission</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'isCompleted</span></code></td>
+<td>Is a completed mission (player or non-player)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'isDebriefed</span></code></td>
+<td>Player has been debriefed</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'isDeclined</span></code></td>
+<td>Player has declined mission</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'isFailure</span></code></td>
+<td>Mission has failed</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'isIntroShown</span></code></td>
+<td>Player has been shown intro text</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'isOpen</span></code></td>
+<td>Mission is available to player</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'isRecorded</span></code></td>
+<td>Mission has been completed and debriefed</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'isSuccess</span></code></td>
+<td>Mission has succeeded</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'isUnavailable</span></code></td>
+<td>Mission is unavailable to player</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'name</span></code></td>
+<td>The name of the mission</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'nodeID</span></code></td>
+<td>ID of the mission’s owner system</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'ownerID</span></code></td>
+<td>ID of the mission’s owner object</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'summary</span></code></td>
+<td>A summary description of the mission</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'unid</span></code></td>
+<td>Mission type UNID</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="msnGetStaticData.html" title="msnGetStaticData"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="msnGetObjRefData.html" title="msnGetObjRefData"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" >Function List</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Kronosaur Productions, LLC..
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

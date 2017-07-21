@@ -1,0 +1,4 @@
+uiSetSoundtrackMode
+===================
+
+.. autotlisp:: (uiSetSoundtrackMode)

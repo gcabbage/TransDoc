@@ -1,0 +1,4 @@
+objGetArmorRepairPrice
+======================
+
+.. autotlisp:: (objGetArmorRepairPrice)

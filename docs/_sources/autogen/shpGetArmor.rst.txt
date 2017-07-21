@@ -1,0 +1,4 @@
+shpGetArmor
+===========
+
+.. autotlisp:: (shpGetArmor)

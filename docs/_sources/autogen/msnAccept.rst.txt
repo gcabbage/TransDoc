@@ -1,0 +1,4 @@
+msnAccept
+=========
+
+.. autotlisp:: (msnAccept)

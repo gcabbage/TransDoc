@@ -1,0 +1,4 @@
+xmlGetTag
+=========
+
+.. autotlisp:: (xmlGetTag)

@@ -1,0 +1,4 @@
+scrGetDesc
+==========
+
+.. autotlisp:: (scrGetDesc)

@@ -1,0 +1,4 @@
+sysSetEnvironment
+=================
+
+.. autotlisp:: (sysSetEnvironment)

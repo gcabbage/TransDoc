@@ -1,0 +1,4 @@
+sysVectorPolarOffset
+====================
+
+.. autotlisp:: (sysVectorPolarOffset)

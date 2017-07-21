@@ -1,0 +1,4 @@
+sysAddTypeRangeEvent
+====================
+
+.. autotlisp:: (sysAddTypeRangeEvent)

@@ -1,0 +1,4 @@
+objIsEnemy
+==========
+
+.. autotlisp:: (objIsEnemy)

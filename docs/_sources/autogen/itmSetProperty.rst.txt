@@ -1,0 +1,4 @@
+itmSetProperty
+==============
+
+.. autotlisp:: (itmSetProperty)

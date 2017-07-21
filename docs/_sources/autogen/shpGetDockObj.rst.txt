@@ -1,0 +1,4 @@
+shpGetDockObj
+=============
+
+.. autotlisp:: (shpGetDockObj)

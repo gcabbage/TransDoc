@@ -1,0 +1,4 @@
+sysGetName
+==========
+
+.. autotlisp:: (sysGetName)

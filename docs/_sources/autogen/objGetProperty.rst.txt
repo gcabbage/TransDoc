@@ -1,0 +1,4 @@
+objGetProperty
+==============
+
+.. autotlisp:: (objGetProperty)

@@ -1,0 +1,4 @@
+itmGetProperty
+==============
+
+.. autotlisp:: (itmGetProperty)

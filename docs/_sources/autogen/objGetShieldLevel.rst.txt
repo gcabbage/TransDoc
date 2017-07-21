@@ -1,0 +1,4 @@
+objGetShieldLevel
+=================
+
+.. autotlisp:: (objGetShieldLevel)

@@ -1,0 +1,4 @@
+isfunction
+==========
+
+.. autotlisp:: (isfunction)

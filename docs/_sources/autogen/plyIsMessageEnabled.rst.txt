@@ -1,0 +1,4 @@
+plyIsMessageEnabled
+===================
+
+.. autotlisp:: (plyIsMessageEnabled)

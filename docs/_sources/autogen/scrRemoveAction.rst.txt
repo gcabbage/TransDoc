@@ -1,0 +1,4 @@
+scrRemoveAction
+===============
+
+.. autotlisp:: (scrRemoveAction)

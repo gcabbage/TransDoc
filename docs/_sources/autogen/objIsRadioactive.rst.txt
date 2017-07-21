@@ -1,0 +1,4 @@
+objIsRadioactive
+================
+
+.. autotlisp:: (objIsRadioactive)

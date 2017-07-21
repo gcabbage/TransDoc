@@ -1,0 +1,225 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>objSetProperty &#8212; Transcendence 1.8a2 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.8a2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="objSetShowAsDestination" href="objSetShowAsDestination.html" />
+    <link rel="prev" title="objSetPos" href="objSetPos.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="objSetShowAsDestination.html" title="objSetShowAsDestination"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="objSetPos.html" title="objSetPos"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" accesskey="U">Function List</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="objSetPos.html"
+                        title="previous chapter">objSetPos</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="objSetShowAsDestination.html"
+                        title="next chapter">objSetShowAsDestination</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/autogen/objSetProperty.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="objsetproperty">
+<h1>objSetProperty<a class="headerlink" href="#objsetproperty" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="tl.objsetproperty">
+<em class="property">function </em><span class="sig-paren">(</span><code class="descname">objSetProperty</code> <em>obj</em> <em>property</em> <em>value</em><span class="sig-paren">)</span> &#x2192; True/Nil<a class="headerlink" href="#tl.objsetproperty" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>property</strong></p>
+<blockquote>
+<div><p>(ships)</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="31%" />
+<col width="69%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'alwaysLeaveWreck</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'dockingEnabled</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'commsKey</span></code></td>
+<td>key</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'known</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'operatingSpeed</span></code></td>
+<td><code class="docutils literal"><span class="pre">'full``|</span></code>’half``|``’quarter``|``’emergency``</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'playerWingman</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'rotation</span></code></td>
+<td>angle</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'selectedMissile</span></code></td>
+<td>type|item</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'selectedWeapon</span></code></td>
+<td>type|item</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'sovereign</span></code></td>
+<td>type</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>property</strong></p>
+<blockquote class="last">
+<div><p>(stations)</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="63%" />
+<col width="37%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'angry</span></code></td>
+<td>True|Nil|ticks</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'barrier</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'ignoreFriendlyFire</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'hp</span></code></td>
+<td>hitPoints</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'immutable</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'known</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'maxHP</span></code></td>
+<td>hitPoints</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'maxStructuralHP</span></code></td>
+<td>hitPoints</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'orbit</span></code></td>
+<td>orbit|Nil</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'paintLayer</span></code></td>
+<td><a href="#id1"><span class="problematic" id="id2">``</span></a>’overhang``|Nil</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'parallax</span></code></td>
+<td>factor</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'playerBlacklisted</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'shipConstructionEnabled</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'shipReinforcementEnabled</span></code></td>
+<td>True|Nil</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">'sovereign</span></code></td>
+<td>type</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">'structuralHP</span></code></td>
+<td>hitPoints</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="objSetShowAsDestination.html" title="objSetShowAsDestination"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="objSetPos.html" title="objSetPos"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Transcendence 1.8a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../allfunctions.html" >Function List</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Kronosaur Productions, LLC..
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

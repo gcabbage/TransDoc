@@ -1,0 +1,4 @@
+objGetData
+==========
+
+.. autotlisp:: (objGetData)

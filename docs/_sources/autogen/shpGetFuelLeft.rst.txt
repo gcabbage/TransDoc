@@ -1,0 +1,4 @@
+shpGetFuelLeft
+==============
+
+.. autotlisp:: (shpGetFuelLeft)

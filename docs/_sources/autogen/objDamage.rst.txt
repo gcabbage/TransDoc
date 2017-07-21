@@ -1,0 +1,4 @@
+objDamage
+=========
+
+.. autotlisp:: (objDamage)

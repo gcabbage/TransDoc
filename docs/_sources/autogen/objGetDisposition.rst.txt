@@ -1,0 +1,4 @@
+objGetDisposition
+=================
+
+.. autotlisp:: (objGetDisposition)

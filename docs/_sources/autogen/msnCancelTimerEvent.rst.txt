@@ -1,0 +1,4 @@
+msnCancelTimerEvent
+===================
+
+.. autotlisp:: (msnCancelTimerEvent)

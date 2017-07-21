@@ -1,0 +1,4 @@
+itmHasAttribute
+===============
+
+.. autotlisp:: (itmHasAttribute)

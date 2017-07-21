@@ -1,0 +1,4 @@
+objGetDistance
+==============
+
+.. autotlisp:: (objGetDistance)

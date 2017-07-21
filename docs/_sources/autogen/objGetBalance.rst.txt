@@ -1,0 +1,4 @@
+objGetBalance
+=============
+
+.. autotlisp:: (objGetBalance)

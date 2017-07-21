@@ -1,0 +1,4 @@
+itmGetActualPrice
+=================
+
+.. autotlisp:: (itmGetActualPrice)

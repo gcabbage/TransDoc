@@ -1,0 +1,4 @@
+shpGetClassName
+===============
+
+.. autotlisp:: (shpGetClassName)

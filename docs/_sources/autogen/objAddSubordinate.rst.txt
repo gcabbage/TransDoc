@@ -1,0 +1,4 @@
+objAddSubordinate
+=================
+
+.. autotlisp:: (objAddSubordinate)

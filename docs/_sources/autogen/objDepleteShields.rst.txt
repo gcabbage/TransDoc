@@ -1,0 +1,4 @@
+objDepleteShields
+=================
+
+.. autotlisp:: (objDepleteShields)

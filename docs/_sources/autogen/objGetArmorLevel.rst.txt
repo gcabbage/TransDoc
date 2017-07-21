@@ -1,0 +1,4 @@
+objGetArmorLevel
+================
+
+.. autotlisp:: (objGetArmorLevel)

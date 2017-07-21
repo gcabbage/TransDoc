@@ -1,0 +1,4 @@
+objUnregisterForEvents
+======================
+
+.. autotlisp:: (objUnregisterForEvents)

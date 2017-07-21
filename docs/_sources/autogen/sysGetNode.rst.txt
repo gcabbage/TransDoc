@@ -1,0 +1,4 @@
+sysGetNode
+==========
+
+.. autotlisp:: (sysGetNode)
