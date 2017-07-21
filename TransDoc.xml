@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE TranscendenceExtension
+	[
+	<!ENTITY unidExtension					"0xDDDEFFFF">
+	<!ENTITY unidPrintHelp					"0xDDDEFFFE">
+
+	]>
+
+<TranscendenceExtension UNID="&unidExtension;"
+		name=		"Transcendence Documentation Generator"
+		release=	"1"
+		version=	"1.0"
+		apiVersion=	"37"
+		>
+
+	<Type unid="&unidPrintHelp;">"
+		<Events>
+			<OnGlobalUniverseCreated>
+				(block (
+					(allHelp (map (sysGlobals) f (list f (fncHelp (eval f)))))
+					(curHelp (map allHelp 'excludeNil h (if (not (find (@ h 1) "DEPRECATED")) (@ h 1))))
+					)
+					(printTo 'log ";###########")
+					(printTo 'log ";Symbol List")
+					(printTo 'log ";###########")
+					(enum allHelp h
+						(switch
+							(find (@ h 1) "DEPRECATED")
+								(printTo 'log (join h " "))
+
+							(and (not (@ h 1)) (isfunction (eval (@ h 0))))
+								(printTo 'log (@ h 0) " UNDOCUMENTED")
+							
+							(@ h 1)
+								(printTo 'log (@ h 0) " builtin")
+							
+							(printTo 'log (@ h 0) " " (isfunction (eval (@ h 0))))
+						))
+
+					(printTo 'log ";#############")
+					(printTo 'log ";Function Help")
+					(printTo 'log ";#############")
+					(enum curHelp h (printTo 'log h))
+					(printTo 'log ";############")
+					)
+			</OnGlobalUniverseCreated>
+		</Events>
+	</Type>
+
+</TranscendenceExtension>

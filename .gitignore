@@ -1,0 +1,9 @@
+# Python bytecode
+*.pyc
+
+# Build files
+/build/
+__pycache__
+
+# Autogen files
+autogen/
