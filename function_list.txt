@@ -1,3 +1,44 @@
+(exampleFunc arg1 arg2 [arg3]) -> result
+Description of the example function. If we have a long
+description, only the first sentence will be displayed
+in the auto summary.
+
+Multiple paragraphs are OK too
+
+arg1 : string
+  The first argument goes first
+   
+arg2 : list
+  This is the second argument. It comes after the first
+
+arg3 compact description of arg3
+returns:
+  Describe the output from the function here
+
+We can use space separated tables to decribe a set of option.
+For example the flags argument has the following meanings:
+   flags  Meaning
+   0x001  capitalize
+   0x002  pluralize
+   0x004  prefix with 'the' or 'a'
+   0x008  prefix with count (or 'a')
+   0x010  prefix with count
+   0x020  no modifiers
+   0x040  prefix with 'the' or 'this' or 'these'
+   0x080  short form of name
+   0x100  actual name
+
+Example:
+  Still need to fix the formatting for example sections
+  >>> (exampleFunc 1 2)
+  >>> Unknown function [exampleFunc]
+
+Note:
+  This is not a real function
+  
+Warning:
+  This is really important
+
 (!= x1 x2 ... xn) -> True if any arguments are not equal
 (* x1 x2 ... xn) -> z
 (+ x1 x2 ... xn) -> z
@@ -27,7 +68,7 @@ Returns Nil if any argument is Nil, otherwise returns last argument
 (cnvDrawRect x y width height color [screen] [ID]) -> True/Nil
 (cnvDrawText x y [width] text font color alignment [screen] [ID]) -> True/Nil
 
-font:
+font : string
 
    'Small
    'Medium
@@ -42,7 +83,7 @@ font:
    'SubTitleHeavyBold
    'Title
 
-alignment:
+alignment : string
 
    'left
    'center
@@ -71,7 +112,7 @@ Iterate itemVar over list evaluating exp while condition is True
 (fmtNoun name nameFlags count formatFlags) -> string
 (fmtNumber [type] value) -> string
 
-type:
+type : string
 
    'integer
    'power
@@ -82,7 +123,7 @@ type:
 (gamEnd endGameReason epitaph [scoreBonus]) -> True/Nil
 (gamSave [options]) -> True/Nil
 
-options:
+options
 
    'checkpoint (or Nil)
    'missionCheckpoint
@@ -106,7 +147,10 @@ options:
 (itmCreate itemUNID count) -> item
 (itmCreateByName criteria name [count]) -> item
 
-criteria as itmGetTypes
+criteria : string
+    as itmGetTypes
+name : string
+count : int32
 (itmCreateRandom criteria levelDistribution) -> item
 
 criteria as itmGetTypes
@@ -133,15 +177,15 @@ criteria as itmGetTypes
 
 flags
 
-   0x001 capitalize
-   0x002 pluralize
-   0x004 prefix with 'the' or 'a'
-   0x008 prefix with count (or 'a')
-   0x010 prefix with count
-   0x020 no modifiers
-   0x040 prefix with 'the' or 'this' or 'these'
-   0x080 short form of name
-   0x100 actual name
+   0x001  capitalize
+   0x002  pluralize
+   0x004  prefix with 'the' or 'a'
+   0x008  prefix with count (or 'a')
+   0x010  prefix with count
+   0x020  no modifiers
+   0x040  prefix with 'the' or 'this' or 'these'
+   0x080  short form of name
+   0x100  actual name
 (itmGetPrice item|type [currency]) -> price of a single item
 (itmGetProperty item|type property) -> value
 
@@ -175,7 +219,7 @@ property
 (itmGetTypeData item|type attrib) -> data
 (itmGetTypes criteria) -> list of itemUNIDs
 
-criteria
+criteria : string
 
    *                  Include all item categories
    a                  Include armor devices
@@ -195,15 +239,13 @@ criteria
    V                  Include virtual items
    ~                  Exclude category
    ^                  Require category
-
    +/-xyz             Require / exclude items with attribute
    +/-UNID:xyz        Require / exclude items with unid
    +/-launchedBy:xyz  Require / exclude ammo launched by unid
    +/-damageType:xyz  Require / exclude weapons with damage
-
    F:xyz              Only items with the given frequency
    L:x-y              Only Items of level x to y
-comparison criteria supported: < <= = => >
+   comparison criteria supported: < <= = => >
    < x                Only items with level less than x
    <$ x               Only items costing less than x
    <# x               Only items massing less than x
@@ -227,11 +269,11 @@ options
 
 property
 
-   'charges charges
-   'damaged [True|Nil]
-   'disrupted [True|Nil|ticks]
-   'incCharges charges
-   'installed [True|Nil]
+   'charges      charges
+   'damaged      [True|Nil]
+   'disrupted    [True|Nil|ticks]
+   'incCharges   charges
+   'installed    [True|Nil]
 (itmSetReference item) -> True/Nil
 (itmSetTypeData item attrib data) -> True/Nil
 (join list [separator]) -> string
@@ -319,12 +361,12 @@ property
 
 property
 
-   'debrieferID obj
-   'isDebriefed True|Nil
-   'isDeclined True|Nil
-   'isIntroShown True|Nil
-   'name newName
-   'summary newSummary
+   'debrieferID   obj
+   'isDebriefed   True|Nil
+   'isDeclined    True|Nil
+   'isIntroShown  True|Nil
+   'name          newName
+   'summary       newSummary
 (msnSetUnavailable missionObj)
 (msnSuccess missionObj [data])
 (msnTranslate missionObj textID [data] [default]) -> text (or Nil)
@@ -342,8 +384,8 @@ connectType:
 
 options:
 
-   'pos1: position relative to obj1
-   'pos2: position relative to obj2
+   'pos1  position relative to obj1
+   'pos2  position relative to obj2
 
 (objAddItem obj item|type [count]) -> True/Nil
 (objAddItemEnhancement obj item enhancementType [lifetime]) -> enhancementID
@@ -518,15 +560,15 @@ criteria as itmGetTypes plus
 
 flags
 
-   0x001 capitalize    capitalize first letter
-   0x002 plural        pluralize name
-   0x004 article       prefix with 'the' or 'a'
-   0x008 count         prefix with count or singular article
-   0x010 countOnly     prefix with count or nothing
-   0x020 noModifiers   no modifiers ('damaged' etc)
-   0x040 demonstrative prefix with 'the' or 'this' or 'these'
-   0x080 short         use short name
-   0x100 actual        actual name (not unidentified name)
+   0x001  capitalize    capitalize first letter
+   0x002  plural        pluralize name
+   0x004  article       prefix with 'the' or 'a'
+   0x008  count         prefix with count or singular article
+   0x010  countOnly     prefix with count or nothing
+   0x020  noModifiers   no modifiers ('damaged' etc)
+   0x040  demonstrative  prefix with 'the' or 'this' or 'these'
+   0x080  short         use short name
+   0x100  actual        actual name (not unidentified name)
 (objGetNamedItems obj name) -> list of items
 (objGetNearestStargate obj) -> obj
 (objGetObjByID objID) -> obj
@@ -666,7 +708,8 @@ property (markers)
 
    'style -> 'smallCross
 
-NOTE: All type properties (accessed via typGetProperty) are also valid object properties.
+NOTE:
+    All type properties (accessed via typGetProperty) are also valid object properties.
 (objGetRefuelItemAndPrice obj objToRefuel) -> (item price)
 (objGetSellPrice obj item ['noInventoryCheck]) -> price (at which obj sells item)
 (objGetShieldLevel obj) -> 0-100% (or -1 for no shields)
@@ -723,29 +766,29 @@ Chance to execute code is: 90 + 10 * (aiLevel - cyberDefenseLevel)
 
 property
 
-   'charges charges
-   'damaged [True|Nil]
-   'disrupted [True|Nil|ticks]
-   'enabled [True|Nil|'silentDisabled|'silentEnabled]
-   'fireArc Nil|(min max)|'omnidirectional
-   'hp hitPoints
-   'incCharges charges
-   'linkedFireOptions list-of-options
-   'pos (angle radius [z])
-   'secondary [True|Nil]
+   'charges            charges
+   'damaged            [True|Nil]
+   'disrupted          [True|Nil|ticks]
+   'enabled            [True|Nil|'silentDisabled|'silentEnabled]
+   'fireArc            Nil|(min max)|'omnidirectional
+   'hp                 hitPoints
+   'incCharges         charges
+   'linkedFireOptions  list-of-options
+   'pos                (angle radius [z])
+   'secondary          [True|Nil]
 (objSetKnown obj) -> True/Nil
 (objSetName obj name [flags]) -> True/Nil
 
 flags
 
-   0x0001 Definite article
-   0x0002 Pluralize first word
-   0x0004 Add 'es' to pluralize
-   0x0008 Custom plural after semicolon
-   0x0010 Pluralize second word
-   0x0020 Reverse 'a' vs 'an'
-   0x0040 No article
-   0x0080 Personal name
+   0x0001  Definite article
+   0x0002  Pluralize first word
+   0x0004  Add 'es' to pluralize
+   0x0008  Custom plural after semicolon
+   0x0010  Pluralize second word
+   0x0020  Reverse 'a' vs 'an'
+   0x0040  No article
+   0x0080  Personal name
 (objSetObjRefData obj attrib obj) -> True/Nil
 (objSetOverlayData obj overlayID attrib data)
 (objSetOverlayEffectProperty obj overlayID property value)
@@ -764,35 +807,35 @@ property:
 
 property (ships)
 
-   'alwaysLeaveWreck True|Nil
-   'dockingEnabled True|Nil
-   'commsKey key
-   'known True|Nil
-   'operatingSpeed 'full|'half|'quarter|'emergency
-   'playerWingman True|Nil
-   'rotation angle
-   'selectedMissile type|item
-   'selectedWeapon type|item
-   'sovereign type
+   'alwaysLeaveWreck    True|Nil
+   'dockingEnabled      True|Nil
+   'commsKey            key
+   'known               True|Nil
+   'operatingSpeed      'full|'half|'quarter|'emergency
+   'playerWingman       True|Nil
+   'rotation            angle
+   'selectedMissile     type|item
+   'selectedWeapon      type|item
+   'sovereign           type
 
 property (stations)
 
-   'angry True|Nil|ticks
-   'barrier True|Nil
-   'ignoreFriendlyFire True|Nil
-   'hp hitPoints
-   'immutable True|Nil
-   'known True|Nil
-   'maxHP hitPoints
-   'maxStructuralHP hitPoints
-   'orbit orbit|Nil
-   'paintLayer 'overhang|Nil
-   'parallax factor
-   'playerBlacklisted True|Nil
-   'shipConstructionEnabled True|Nil
-   'shipReinforcementEnabled True|Nil
-   'sovereign type
-   'structuralHP hitPoints
+   'angry               True|Nil|ticks
+   'barrier             True|Nil
+   'ignoreFriendlyFire  True|Nil
+   'hp                  hitPoints
+   'immutable           True|Nil
+   'known               True|Nil
+   'maxHP               hitPoints
+   'maxStructuralHP     hitPoints
+   'orbit               orbit|Nil
+   'paintLayer          'overhang|Nil
+   'parallax            factor
+   'playerBlacklisted   True|Nil
+   'shipConstructionEnabled     True|Nil
+   'shipReinforcementEnabled    True|Nil
+   'sovereign           type
+   'structuralHP        hitPoints
 (objSetShowAsDestination obj [options]) -> True/Nil
 
 options:
@@ -946,9 +989,9 @@ filter can be lambda function or item criteria
 
 screenDesc:
 
-   'screen: Current screen
-   'pane: Current pane
-   'data: Associated data
+   'screen      Current screen
+   'pane        Current pane
+   'data        Associated data
 (scrIncData screen attrib [increment]) -> value
 (scrIsActionEnabled screen actionID) -> True/Nil
 (scrIsFirstOnInit screen) -> True/Nil
@@ -1032,41 +1075,41 @@ order:
    'attack         obj [time]        Attack target
    'attackArea     obj dist [time]   Attack around target
    'attackHold     obj [time]
-   'attackNearestEnemy               Attack nearest enemy
-   'attackPlayerOnReturn             Wait and attack player
+   'attackNearestEnemy     -         Attack nearest enemy
+   'attackPlayerOnReturn   -         Wait and attack player
    'attackStation  obj [?]           Attack target station
    'bombard        obj [time]        Hold and attack target
    'dock           obj               Dock with target
    'escort         obj [ang] [dist]  Escort target
    'fireEvent      obj event         Fire event on target
    'follow         obj               Follow without defending
-   'followPlayerThroughGate
+   'followPlayerThroughGate  -       -
    'gate           [obj]             Gate out of system
-   'gateOnStationDestroyed           Flee if station destroyed
-   'gateOnThreat                     Flee if threatened
+   'gateOnStationDestroyed   -       Flee if station destroyed
+   'gateOnThreat             -       Flee if threatened
    'goto           obj [dist]        Goto target
    'gotoPos        pos               Goto position
    'guard          obj               Guard target
    'hold           [time]            Stay in place
-   'holdAndAttack  obj [time]
+   'holdAndAttack  obj [time]        -
    'holdCourse     course dist       Hold course
    'loot           obj               Loot target
    'mine           obj               Mine asteroids [base]
    'navPath        navID             Follow nav path ID
    'orbit          obj dist [time]   Orbit target
    'patrol         obj [dist]        Patrol around target
-   'scavenge                         Scavenge for scraps
+   'scavenge       -                 Scavenge for scraps
    'sendMessage    obj msg           Send message to target
    'sentry         obj [time]        Guard target (turrets)
-   'tradeRoute                       Move between stations
+   'tradeRoute     -                 Move between stations
    'turnTo         ang               Turn to face angle
    'wait           [time]            Wait, do not attack
    'waitForEnemy   [time]            Wait until enemy in LRS
-   'waitForPlayer                    Wait for player to return
+   'waitForPlayer  -                 Wait for player to return
    'waitForTarget  obj [dist] [time] Wait until target in range
-   'waitForThreat  [time]
+   'waitForThreat  [time]            -
    'waitForUndock  obj [time]        Wait for target to undock
-   'wander                           Wander, avoiding enemies
+   'wander         -                 Wander, avoiding enemies
 (shpOrderImmediate ship order [target] [count]) -> True/Nil
 (shpRechargeShield ship hpToRecharge) -> True/Nil
 (shpRefuelFromItem ship item) -> True/Nil
@@ -1119,9 +1162,9 @@ output is one of:
 
 disposition:
 
-   0 / 'enemy
-   1 / 'neutral
-   2 / 'friend
+   0   'enemy
+   1   'neutral
+   2   'friend
 (split string [characters]) -> list
 (sqrt x) -> integer z
 (sqrtn x) -> real z
@@ -1207,7 +1250,7 @@ options:
 
 controller:
 
-                     standard
+   None              standard
    'auton            auton
    'ferian           Ferian
    'fleet            fleet member
@@ -1554,7 +1597,6 @@ criteria
    s                  ShipClass
    t                  StationType
    +/-{attrib}        Require/exclude types with given attribute
-
    +/-unid:{unid}     Require/exclude types of given unid
    =n;                Level comparisons (also supports < etc.)
 entry
@@ -1565,8 +1607,8 @@ entry
 
 format
 
-   display:           Elapsed time in display format.
-   seconds:           Elapsed time in game seconds.
+   display            Elapsed time in display format.
+   seconds            Elapsed time in game seconds.
 (unvGetExtensionData scope attrib) -> data
 (unvGetRealDate) -> (year month day) GMT
 (unvGetTick) -> time
